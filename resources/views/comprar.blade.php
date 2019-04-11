@@ -25,7 +25,7 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label for="telefono">Teléfono</label>
-                            <input type="text"  v-model='compra.cliente.telefono' id="telefono" class="form-control" placeholder="">
+                            <input type="number"  v-model='compra.cliente.telefono' id="telefono" class="form-control" placeholder="">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="correo">Correo eléctronico</label>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label for="direccion">Cantidad</label>
-                            <input type="text" v-model='compra.cantidad' id="direccion" class="form-control" placeholder="">
+                            <input type="number" v-model='compra.cantidad' id="direccion" class="form-control" placeholder="">
                         </div>
                         <div class="form-group col-md-4 mt-4">
                             <button class="btn btn-success" @click.prevent='añadir()'>Añadir a la bolsa</button>

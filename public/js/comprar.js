@@ -61,26 +61,14 @@ new Vue({
                 let producto = this.detalle.filter(item => item.producto.id == this.compra.producto.id);
                 
                 if (producto.length > 0 ) {
-                    $.each(this.detalle, function (index, value) { 
-                        if (value.producto.id = producto[0].producto.id) {
-                            let suma = parseInt(self.detalle[index].cantidad) + parseInt(self.compra.cantidad)
-                            if (suma > self.detalle[index].producto.stock) {
-                                Swal.fire({
-                                    title: 'Error!',
-                                    text: `La cantidad no puede ser mayor al stock del producto`,
-                                    type: 'error',
-                                    confirmButtonText: 'OK'
-                                })
-                            }else{
-                                self.detalle[index].cantidad = suma
-                                self.compra.producto = []
-                                self.compra.cantidad = ''
-                               
-                            }
-                        }else{
-                            
-                        }                         
-                    });
+                    Swal.fire({
+                        title: 'Error!',
+                        text: `El producto ya fue añadido`,
+                        type: 'error',
+                        confirmButtonText: 'OK'
+                    })
+                    self.compra.producto = []
+                    self.compra.cantidad = ''
                 }else{
                     let obj = {
                         producto: this.compra.producto,
