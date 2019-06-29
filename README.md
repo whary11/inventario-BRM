@@ -14,7 +14,8 @@ Configurar el <strong>.env</strong>, que será tu archivo de entrada ("DB")
 
 Ejecutar las migraciones
 *     php artisan migrate:refresh
-El sistema consta de varias partes
+
+Si has llegado a este pun entonces ya puedes interactuar con la aplicación.
 
 
 ## Menú, Basicos:
