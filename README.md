@@ -1,6 +1,6 @@
-## LUIS FERNANDO RAGA RENTERIA :fa-code:
+## LUIS FERNANDO RAGA RENTERIA
 
-## INVENTARIO BRM :fa-calendar:
+## INVENTARIO BRM
 Text Brm - Sistema De Inventarios Y Compras
 
 El sistema consta de varias partes
