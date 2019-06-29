@@ -1,7 +1,7 @@
 @extends('layouts')
 
 @section('contenido')
-<div class="container mt-2" id="comprar">
+<div class="container mt-2" id="comprar" v-cloak>
     <div class="row justify-content-center">
         <div class="col-md-10">
             <form class="card" @submit.prevent='setFactura()'>
@@ -48,7 +48,7 @@
                                No hay productos..
                            </span>
                        </v-select>
-                       <small v-if='compra.producto != null && compra.producto.stock'>@{{compra.producto.stock}} productos en stock</small>
+                       <p v-if='compra.producto != null && compra.producto.stock' class="text-success" > <blockquote> @{{compra.producto.stock}} </blockquote> productos en stock</p>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="direccion">Cantidad</label>
@@ -110,3 +110,10 @@
 <script src="{{ asset('js/comprar.js') }}"></script>
 @endsection
 @endsection
+
+<style>
+    [v-cloak]{
+        display: none;
+    }
+
+</style>

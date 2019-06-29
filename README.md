@@ -30,12 +30,28 @@ En está parte es donde se realizará la venta del producto al cliente
 en este se muestra el historial de las facturas, aquí se puede cancelar una factura y generar un pdf con la factura
 
 
+
+
 ## LUIS FERNANDO RAGA RENTERIA :fa-code:
 
 ## INVENTARIO BRM :fa-calendar:
 Text Brm - Sistema De Inventarios Y Compras
 
 El sistema consta de varias partes
+
+
+# Instalar las dependencias
+
+Instalar las dependencias
+*     npm install
+*     composer install
+
+Configurar el <strong>.env</strong>, que será tu archivo de entrada ("Nombre de base dedatos para su funcionamiento")
+
+ejecutar las migraciones
+*     php artisan migrate:refresh
+El sistema consta de varias partes
+
 
 ## Menú, Basicos:
 ###1. Sub Menú: nuevo producto 
