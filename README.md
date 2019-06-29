@@ -37,6 +37,6 @@ En este se muestra el historial de las facturas, aquí se puede cancelar una fac
 
 
 ## Modelo Entidad Relación
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://drive.google.com/file/d/1-NrziuhT0kaHqkQCK4BFyUE53jsWE0gX/view?usp=sharing)
 
 
