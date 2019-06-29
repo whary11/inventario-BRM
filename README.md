@@ -10,9 +10,9 @@ Doc.
 *     npm install
 *     composer install
 
-Configurar el <strong>.env</strong>, que será tu archivo de entrada ("Nombre de base dedatos para su funcionamiento")
+Configurar el <strong>.env</strong>, que será tu archivo de entrada ("DB")
 
-ejecutar las migraciones
+Ejecutar las migraciones
 *     php artisan migrate:refresh
 El sistema consta de varias partes
 
