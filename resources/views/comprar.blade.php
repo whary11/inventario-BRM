@@ -4,8 +4,8 @@
 <div class="container mt-2" id="comprar" v-cloak>
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <form class="card" @submit.prevent='setFactura()'>
-                <div class="card-header">
+            <form class="card shadow-lg" @submit.prevent='setFactura()'>
+                <div class="card-header bg-success">
                     <h4 class="text-center">Facturación</h4>
                 </div>
                 <div class="card-body">
@@ -48,7 +48,7 @@
                                No hay productos..
                            </span>
                        </v-select>
-                       <p v-if='compra.producto != null && compra.producto.stock' class="text-success" > <blockquote> @{{compra.producto.stock}} </blockquote> productos en stock</p>
+                       <p v-if='compra.producto != null && compra.producto.stock' class="text-primary card mt-2 p-1" >  @{{compra.producto.stock}} productos disponibles para la compra.</p>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="direccion">Cantidad</label>

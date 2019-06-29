@@ -44,7 +44,31 @@ new Vue({
                         defaultContent: `<div class="btn-group"><button data-toggle="modal" data-target="#ver" class="ver btn btn-primary">Ver</button><button data-toggle="modal" class="cancelar ml-2 btn btn-danger">Cancelar</button>`
                     },
                 ],
-                language: this.language
+                
+              language: {
+                  "decimal": "",
+                  "emptyTable": "No hay información",
+                  "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                  "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                  "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                  "infoPostFix": "",
+                  "thousands": ",",
+                  "lengthMenu": "Mostrar _MENU_ Entradas",
+                  "loadingRecords": "Cargando...",
+                  "processing": "Procesando...",
+                  "search": "Buscar:",
+                  "zeroRecords": "Sin resultados encontrados",
+                  "paginate": {
+                      "first": "Primero",
+                      "last": "Ultimo",
+                      "next": ">",
+                      "previous": "<"
+                  },
+                  "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                  }
+              },
             });
             this.tabla.on('order.dt search.dt', () => {
                 this.tabla.column(0, {
