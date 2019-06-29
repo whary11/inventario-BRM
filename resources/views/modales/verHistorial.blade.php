@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                 <a href="#" class="btn btn-primary"  @click.prevent="pdf(ver_detalle.id)" >Generar factura</a>
             </div>
         </div>

@@ -9,7 +9,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h5 class="card-title text-center">Información del proveedor</h5>
+                <h5 class="card-title text-center">Proveedor</h5>
                 <div class="row">
                     <div class="form-group col-md-4">
                         <label for="identificacion">Identificación <span class="text-danger">*</span></label>
@@ -42,7 +42,7 @@
                             class="form-control" placeholder="">
                     </div>
                 </div>
-                <h5 class="card-title text-center">Información del producto</h5>
+                <h5 class="card-title text-center">Producto</h5>
                 <div class="row">
                     <div class="form-group col-md-4">
                         <label for="nombre_producto">Producto <span class="text-danger">*</span></label>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </div>
         </div>

@@ -2,11 +2,11 @@
 
 @section('contenido')
 <main id="producto_proveedor">
-    <div class="container">
+    <div class="container mb-4">
         <div class="row justify-content-center">
             <div class="col-md-10 mt-5">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-success">
                         <h4 class="text-center card-title">
                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#crearProductoModal">

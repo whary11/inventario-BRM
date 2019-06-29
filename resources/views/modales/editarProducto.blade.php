@@ -15,12 +15,12 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="precio">Precio de venta <span class="text-danger">*</span></label>
-                        <input type="text" v-model='editar_producto.precio_venta' required id="precio" class="form-control" placeholder="">
+                        <input type="number" v-model='editar_producto.precio_venta' required id="precio" class="form-control" placeholder="">
                     </div>
                 </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
           <button type="submit" class="btn btn-primary">Editar</button>
         </div>
       </div>

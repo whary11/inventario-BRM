@@ -5,9 +5,9 @@
     <div class="container mt-4" id="historial">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="text-center">Historial de facturas</h4>
+                <div class="card shadow-lg">
+                    <div class="card-header bg-success">
+                        <h4 class="text-center pt-2">Historial de facturas</h4>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">

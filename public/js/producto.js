@@ -86,34 +86,50 @@ new Vue({
             });
         },
         
-        crear(){
-            $.ajax({
-                type: "POST",
-                url: "/productos/setproducto",
-                data: this.nuevo_producto,
-                success:(response)=> {
-                    console.log(response);
-                    if (response.resp) {
-                        $('#crear').modal('hide')
-                        Swal.fire({
-                            title: 'Muy bien!',
-                            text: `Producto creado de manera correta`,
-                            type: 'success',
-                            confirmButtonText: 'OK'
-                        })
-                        this.tabla.ajax.reload();
-                       this.nuevo_producto={}
-                    }else{
-                        Swal.fire({
-                            title: 'Error!',
-                            text: `no se pudo crear el producto`,
-                            type: 'error',
-                            confirmButtonText: 'OK'
-                        })
+        
+        crear(){ 
+            
+            
+
+            if (Number(this.nuevo_producto.precio_venta.trim()) == NaN) {
+                Swal.fire({
+                    title: 'Muy bien!',
+                    text: `El precio es incorrecto`,
+                    type: 'error',
+                    confirmButtonText: 'OK'
+                })
+                console.log(Number(this.nuevo_producto.precio_venta.trim()));
+
+            }else{
+
+                $.ajax({
+                    type: "POST",
+                    url: "/productos/setproducto",
+                    data: this.nuevo_producto,
+                    success:(response)=> {
+                        console.log(response);
+                        if (response.resp) {
+                            $('#crear').modal('hide')
+                            Swal.fire({
+                                title: 'Muy bien!',
+                                text: `Producto creado de manera correta`,
+                                type: 'success',
+                                confirmButtonText: 'OK'
+                            })
+                            this.tabla.ajax.reload();
+                           this.nuevo_producto={}
+                        }else{
+                            Swal.fire({
+                                title: 'Error!',
+                                text: `no se pudo crear el producto`,
+                                type: 'error',
+                                confirmButtonText: 'OK'
+                            })
+                        }
+                        
                     }
-                    
-                }
-            });
+                });
+            }
             
         },
         editar(){

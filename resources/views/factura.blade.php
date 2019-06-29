@@ -1,6 +1,6 @@
 {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <script src="{{ asset('js/app.js') }}"></script> --}}
-<table  width='100%' border="1" >
+<table  width='100%' border="1">
     <thead>
         <tr>
             <th>Numero de factura: {{$detalle['num_factura']}}</th>
