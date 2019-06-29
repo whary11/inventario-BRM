@@ -3,20 +3,19 @@
 ## INVENTARIO BRM
 Text Brm - Sistema De Inventarios Y Compras
 
-El sistema consta de varias partes
+Doc.
 
 
 # Instalar las dependencias
-
-Instalar las dependencias
 *     npm install
 *     composer install
 
-Configurar el <strong>.env</strong>, que será tu archivo de entrada ("Nombre de base dedatos para su funcionamiento")
+Configurar el <strong>.env</strong>, que será tu archivo de entrada ("DB")
 
-ejecutar las migraciones
+Ejecutar las migraciones
 *     php artisan migrate:refresh
-El sistema consta de varias partes
+
+Si has llegado a este punto entonces ya puedes interactuar con la aplicación.
 
 
 ## Menú, Basicos:
@@ -37,5 +36,6 @@ En este se muestra el historial de las facturas, aquí se puede cancelar una fac
 
 
 ## Modelo Entidad Relación
+![](https://doc-08-20-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/f9iab21c7hajh85gfatbnd2b760af613/1561780800000/12898407186122732109/*/1-NrziuhT0kaHqkQCK4BFyUE53jsWE0gX?e=view)
 
 
