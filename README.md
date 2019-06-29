@@ -3,12 +3,10 @@
 ## INVENTARIO BRM
 Text Brm - Sistema De Inventarios Y Compras
 
-El sistema consta de varias partes
+Doc.
 
 
 # Instalar las dependencias
-
-Instalar las dependencias
 *     npm install
 *     composer install
 
