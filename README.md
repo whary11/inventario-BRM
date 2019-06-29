@@ -34,3 +34,8 @@ En este modulo se realiza la compra de los productos previamente creados con su 
 
 ### Sub Menú: Historial de facturas: 
 En este se muestra el historial de las facturas, aquí se puede cancelar una factura y generar un pdf con la factura.
+
+
+## Modelo Entidad Relación
+
+
